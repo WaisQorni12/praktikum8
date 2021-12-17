@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wais Qorni</title>
+  </head>
+  <body>
+    <input type="tel" name="" id="angka1" onchange="count()" />
+    <label for="">+</label>
+    <input type="tel" name="" id="angka2" onchange="count()" />
+    <label for="">=</label>
+    <input type="tel" id="hasil" />
+
+    <script>
+      function count() {
+        let _bil1 = Number(document.getElementById("angka1").value);
+        let _bil2 = Number(document.getElementById("angka2").value);
+        let _hasil = _bil1 + _bil2;
+        document.getElementById("hasil").value = _hasil;
+      }
+      //   let angka_1 = Number(document.getElementById("angka1"));
+      //   let angka_2 = Number(document.getElementById("angka2"));
+      //   let hasil = document.getElementById("hasil");
+      //   let penampung = angka_1.value + angka_2.value;
+
+      //   function count() {
+      //     hasil.value = penampung;
+      //   }
+    </script>
+  </body>
+</html>
